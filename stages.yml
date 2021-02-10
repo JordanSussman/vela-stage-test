@@ -1,0 +1,18 @@
+version: "1"
+
+metadata:
+  template: false
+
+stages:
+  test:
+    steps:
+      - name: test
+        images: alpine
+        commands:
+          - echo hello
+  build:
+    steps:
+      - name: build
+        images: alpine
+        commands:
+          - echo hello
